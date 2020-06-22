@@ -1,0 +1,22 @@
+.btn{
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302);
+      transition: .1s ease-in-out;
+
+  &:hover{
+    opacity: .8;
+  }
+
+  
+  .btn__txt{
+    display: block;
+    padding: 16px 24px;
+  }
+}
+
+.btn--contact{
+  background-color: #e79c2a;
+  border: 1px solid #e79c2a;
+
+}
