@@ -1,5 +1,5 @@
 // レイアウト幅
-$layout-width-inner: 968px;
+$layout-width-inner: 1016px;
 
 // ブレークポイント
 $breakpoints: (
@@ -9,13 +9,15 @@ $breakpoints: (
 );
 
 //画像格納ディレクトリ
-$imgDir: '/img/';
+$imgDir: "/img/";
 
 //ベースカラー
-$base-color:#444;
+$base-color: rgba(47, 135, 191, 1);
 
 // 強調色
-$emp-color: #2fb7c0;
+$emp-color: #e79c2a;
 
 // フォントカラー
-$font-color:#3a3a59;
+$font-color: #3a3a59;
+
+// ブルー

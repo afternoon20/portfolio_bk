@@ -1,23 +1,21 @@
-.btn{
+.btn {
   display: inline-block;
   border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-  transition: .2s ease-in-out;
-  
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-in-out;
 
-  &:hover{
-    opacity: .8;
-  }
-
-  
-  .btn__txt{
+  .btn__txt {
+    font-size: 1.6em;
     display: block;
     padding: 16px 24px;
   }
 }
 
-.btn--contact{
-  background-color: #e79c2a;
-  border: 1px solid #e79c2a;
+.btn--contact {
+  background-color: $emp-color;
 
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
 }

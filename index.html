@@ -1,37 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico">
-  <title>ポートフォリオ</title>
-</head>
-<body>
-  <div class="mv">
-    <div class="inner">
-      <div class="mv-table">
-        <div class="mv-table-cell">
-          <h2 class="mv-ttl">コーディング、WordPressのお仕事募集中です。</h2>
-          <div class="mv-wrapper">
-            <p class="mv-txt">ここにテキストここにテキストここにテキストここにテキスト</p>
-            <p class="mv-txt">ここにテキスト納期厳守、丁寧な対応で心がけています。</p>
-          </div>
-          <div class="btn btn--contact">
-            <a href="#" class="btn__txt">お問い合わせ</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>ポートフォリオ</title>
+  </head>
+  <body>
+    <main id="main">
+      <!-- メインビジュアル -->
+      <section id="mv" class="mv">
+        <div class="inner">
+          <div class="mv-table">
+            <div class="mv-table-cell">
+              <h1 class="mv-ttl">コーディング、WordPressの<br class="br-tab" />お仕事お受けします。</h1>
+              <div class="mv-txtarea">
+                <p class="mv-txt"></p>
+                <p class="mv-txt"></p>
+              </div>
+              <div class="btn btn--contact">
+                <a href="#" class="btn__txt">お問い合わせ</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    
+      </section>
+      <!-- サービス -->
+      <section id="service" class="service">
+        <div class="inner">
+          <h2 class="service-ttl">Service</h2>
+          <div class="service-list">
+            <div class="service-list__item">
+              <i class="service-list__icon fas fa-code"></i>
+              <div class="service-list__disc">
+                <h3 class="service-list__ttl">コーディング</h3>
+                <p class="service-list__txt">
+                  レスポンシブ対応で、コーディング規約に準拠したコーディングを行います。納品前のバリデーションチェックを行い、品質維持を努めます。
+                </p>
+              </div>
+            </div>
+            <div class="service-list__item">
+              <i class="service-list__icon fab fa-wordpress-simple"></i>
+              <div class="service-list__disc">
+                <h3 class="service-list__ttl">Wordpress制作</h3>
+                <p class="service-list__txt">
+                  HTMLのサイトにWordPressを組み込みます。お客様自身でサイトを更新できるようにカスタマイズいたします。
+                </p>
+              </div>
+            </div>
+            <div class="service-list__item">
+              <i class="service-list__icon fas fa-laptop-code"></i>
+              <div class="service-list__disc">
+                <h3 class="service-list__ttl">ホームページ・LP制作</h3>
+                <p class="service-list__txt">
+                  既存のテンプレートを利用して制作いたします。オリジナルデザインをご希望の方は、提携しているwebデザイナーと連携して制作いたします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- プロフィール -->
+      <section id="profile" class="profile">
+        <div class="inner">
+          <h2 class="profile-ttl">Profile</h2>
+        </div>
+      </section>
+      <!-- 制作物 -->
+      <section id="works" class="works">
+        <div class="inner">
+          <h2 class="works-ttl">Works</h2>
+          <div class="service-list">
+            <div class="service-list__item">
+              <i class="service-list__icon fas fa-code"></i>
+              <div class="service-list__disc">
+                <h3 class="service-list__ttl">コーディング</h3>
+                <p class="service-list__txt">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="service-list__item">
+              <i class="service-list__icon fab fa-wordpress-simple"></i>
+              <div class="service-list__disc">
+                <h3 class="service-list__ttl">Wordpress制作</h3>
+                <p class="service-list__txt">
+                  すでにお持ちのHTMLのサイトにWordPressを組み込みます。お客様自身でサイトを更新できるようにカスタマイズいたします。
+                </p>
+              </div>
+            </div>
+            <div class="service-list__item">
+              <i class="service-list__icon fas fa-laptop-code"></i>
+              <div class="service-list__disc">
+                <h3 class="service-list__ttl">ホームページ・LP制作</h3>
+                <p class="service-list__txt">
+                  既存のテンプレートを利用して制作いたします。ドメインの取得からサーバへのアップロードまでご対応可能でございます。オリジナルデザインをご希望の方は、提携しているwebデザイナーと連携して制作させていただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- お問い合わせ -->
+      <section id="contact" class="contact">
+        <div class="inner">
+          <h2 class="contact-ttl">Contact</h2>
+        </div>
+      </section>
+    </main>
 
-  </div>
-  
-  
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
