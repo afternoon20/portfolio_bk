@@ -2,6 +2,7 @@
   background: linear-gradient(45deg, rgba(129, 234, 219, 0.9), rgba(152, 225, 251, 1), rgba(47, 135, 191, 0.9)), url(../img/mv_bg.jpg) center center;
   background-size: cover;
   height: calc(100vh - 160px);
+  margin-top: -60px;
 
   @include mq("sp") {
     height: calc(100vh - 80px);
