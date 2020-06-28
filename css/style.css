@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
   line-height: 1;
 }
 
@@ -40,7 +40,8 @@ td,
 ul,
 ol,
 dl,
-li {
+li,
+figure {
   border: 0;
   box-sizing: border-box;
   color: inherit;
@@ -61,7 +62,8 @@ main {
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -76,30 +78,34 @@ body {
 
 h1 {
   word-wrap: normal;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 56px;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.8rem;
 }
 
 p {
   word-wrap: break-word;
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
-  line-height: 1.8;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
 }
 
 span {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 section {
@@ -110,6 +116,21 @@ section {
   section {
     padding: 40px 0;
   }
+}
+
+*:focus {
+  outline: none;
+}
+
+.accordion-close {
+  font-size: 1.6rem;
+}
+
+.accordion-close--career {
+  color: #2f87bf;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 0;
 }
 
 .br-sp {
@@ -141,7 +162,7 @@ section {
 
 .btn .btn__txt {
   display: block;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   padding: 16px 24px;
 }
 
@@ -162,6 +183,52 @@ section {
   opacity: 0.7;
 }
 
+.career {
+  margin-bottom: 72px;
+}
+
+.career__ttl {
+  font-size: 2.4em;
+  margin-bottom: 24px;
+}
+
+.career__year {
+  width: 60px;
+}
+
+.career-cotent {
+  border-top: hidden !important;
+}
+
+.career__content-ttl {
+  border-bottom: 1px solid #000;
+  display: inline;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  padding-bottom: 4px;
+}
+
+.career__content-textarea {
+  margin: 16px 0 0 0;
+}
+
+.career__content-txt {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.career-cotent__detail {
+  margin-bottom: 24px;
+}
+
+.career-cotent__detail-item {
+  margin: 16px 0 32px;
+}
+
+.career-cotent__detail-item:nth-child(2) {
+  margin-bottom: 0;
+}
+
 .header {
   background: rgba(255, 255, 255, 0);
   height: 60px;
@@ -176,7 +243,7 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -289,6 +356,129 @@ section {
   }
 }
 
+.owl-prev,
+.owl-next {
+  border: 0px solid black;
+  display: block !important;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+}
+
+.owl-prev {
+  left: -20px;
+}
+
+.owl-next {
+  right: -20px;
+}
+
+.owl-prev i,
+.owl-next i {
+  color: #2f87bf;
+  transform: scale(4, 5);
+}
+
+.owl-nav .disabled i {
+  color: #d1e6f4 !important;
+}
+
+.profile {
+  background-color: #f5fcff;
+}
+
+.profile-list {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.profile-list-top {
+  margin-right: 32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-list-top {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+}
+
+.profile-img {
+  background: url(../img/profile-img.jpg) center center no-repeat;
+  background-color: red;
+  background-size: 132%;
+  border-radius: 50%;
+  height: 160px;
+  margin-bottom: 16px;
+  width: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-img {
+    margin-bottom: 8px;
+  }
+}
+
+.profile-textarea {
+  border: solid 2px #555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 120px;
+  padding: 16px;
+  position: relative;
+  width: calc(80% - 32px);
+}
+
+@media screen and (max-width: 767px) {
+  .profile-textarea {
+    width: 100%;
+  }
+}
+
+.profile-textarea:before {
+  border: 12px solid transparent;
+  border-right: 12px solid #fff;
+  content: "";
+  left: -24px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+
+.profile-textarea :after {
+  border: 14px solid transparent;
+  border-right: 14px solid #555;
+  content: "";
+  left: -30px;
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.profile-textarea__txt {
+  font-size: 1.6em;
+}
+
+.profile-textarea__txt:first-child {
+  margin-bottom: 8px;
+}
+
+.profile-career {
+  margin-top: 48px;
+  width: 100%;
+}
+
 .service-list {
   align-items: stretch;
   display: flex;
@@ -348,6 +538,185 @@ section {
   font-weight: 300;
 }
 
+.service-skill {
+  margin-left: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .service-skill {
+    margin-left: 0;
+  }
+}
+
+.service-skill__ttl {
+  font-size: 2.4em;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .service-skill__ttl {
+    text-align: center;
+  }
+}
+
+.service-skill__txt {
+  margin-left: 16px;
+}
+
+.skill__ttl {
+  font-size: 2.4em;
+  margin-bottom: 24px;
+}
+
+.skill__item {
+  text-align: center;
+}
+
+.skill__img {
+  height: 88px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .skill__img {
+    height: 44px;
+  }
+}
+
+.skill__img01 {
+  background: url(../img/skill-img01.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img02 {
+  background: url(../img/skill-img02.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img03 {
+  background: url(../img/skill-img03.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img04 {
+  background: url(../img/skill-img04.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img05 {
+  background: url(../img/skill-img05.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img06 {
+  background: url(../img/skill-img06.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img07 {
+  background: url(../img/skill-img07.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img08 {
+  background: url(../img/skill-img08.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img09 {
+  background: url(../img/skill-img09.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img10 {
+  background: url(../img/skill-img10.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img11 {
+  background: url(../img/skill-img11.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img12 {
+  background: url(../img/skill-img12.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img13 {
+  background: url(../img/skill-img13.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img14 {
+  background: url(../img/skill-img14.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img15 {
+  background: url(../img/skill-img15.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img16 {
+  background: url(../img/skill-img16.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img17 {
+  background: url(../img/skill-img17.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img18 {
+  background: url(../img/skill-img18.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img19 {
+  background: url(../img/skill-img19.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__img20 {
+  background: url(../img/skill-img20.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.skill__name {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.sns__link {
+  font-size: 2.4rem;
+  margin-right: 16px;
+}
+
+.sns__link:last-child {
+  margin-right: 0;
+}
+
+.sns__link:hover {
+  opacity: 0.5;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 1.6em;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-th {
+  width: 20px;
+}
+
+.table-td {
+  padding: 8px 0;
+}
+
 .works-list {
   align-items: stretch;
   display: flex;
@@ -385,7 +754,7 @@ section {
 }
 
 .works-list__ttl {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .works-list__txt {
@@ -407,6 +776,21 @@ section {
   color: #2f87bf;
   font-size: inherit;
   margin: 0 4px;
+}
+
+.works-list__link {
+  margin-top: 48px;
+  padding-right: 16px;
+  text-align: right;
+}
+
+.works-list__link-txt {
+  font-size: 1.4em;
+  padding-bottom: 2px;
+}
+
+.works-list__link-txt:hover {
+  border-bottom: 1px solid #000;
 }
 
 .works-btn {

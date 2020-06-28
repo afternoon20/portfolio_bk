@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+  font-size: 1.6em;
+  // border: 1px solid;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-body {
+}
+
+.table-th {
+  // background-color: red;
+  // border: 1px solid;
+  width: 20px;
+}
+
+.table-td {
+  // border: 1px solid;
+  padding: 8px 0;
+}

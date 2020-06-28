@@ -1,0 +1,15 @@
+.sns {
+}
+
+.sns__link {
+  font-size: 2.4rem;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

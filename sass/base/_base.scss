@@ -6,31 +6,35 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   word-wrap: normal;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 56px;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.8rem;
 }
 
 p {
-  font-size: 1.6em;
-  line-height: 1.8;
-  letter-spacing: 0.1em;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
   word-wrap: break-word;
 }
 
 span {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 section {
@@ -39,4 +43,8 @@ section {
   @include mq("sp") {
     padding: 40px 0;
   }
+}
+
+*:focus {
+  outline: none;
 }

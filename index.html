@@ -9,6 +9,8 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <title>ポートフォリオ</title>
   </head>
@@ -16,7 +18,7 @@
     <header class="header">
       <div class="inner">
         <div class="header-wrapper">
-          <h1 class="header-logo">ポートフォリオ</h1>
+          <h1 class="header-logo">東京都で活動しているフリーランスのWEBエンジニア</h1>
           <nav class="header-nav">
             <ul class="header-nav__list">
               <li class="header-nav__list-item"><a href="" class="header-nav__list-link">TOP</a></li>
@@ -47,17 +49,17 @@
           </div>
         </div>
       </section>
-      <!-- サービス -->
+      <!-- できること -->
       <section id="service" class="service">
         <div class="inner">
-          <h2 class="service-ttl">サービス</h2>
+          <h2 class="service-ttl">できること</h2>
           <div class="service-list">
             <div class="service-list__item">
               <i class="service-list__icon fas fa-code"></i>
               <div class="service-list__disc">
                 <h3 class="service-list__ttl">コーディング</h3>
                 <p class="service-list__txt">
-                  レスポンシブ対応で、コーディング規約に準拠したコーディングを行います。納品前のバリデーションチェックを行い、品質維持を努めます。
+                  レスポンシブ対応で、コーディング規約に準拠したコーディングを行います。納品前のバリデーションチェックを行い、品質維持に努めます。
                 </p>
               </div>
             </div>
@@ -86,9 +88,179 @@
       <section id="profile" class="profile">
         <div class="inner">
           <h2 class="profile-ttl">プロフィール</h2>
+          <div class="profile-list">
+            <div class="profile-list-top">
+              <div class="profile-img"></div>
+              <div class="sns">
+                <a href="#" class="sns__link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="sns__link"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <div class="profile-textarea">
+              <p class="profile-textarea__txt">
+                群馬県出身で東京都在住。1994年生まれ。
+              </p>
+              <p class="profile-textarea__txt">
+                大学卒業後、SES企業に就職しJavaプログラマとしてアプリケーション開発に携わる。
+                現在は、会計事務所でシステム担当・経理職として働きながら、フリーのWEBエンジニアとしても活動している。
+              </p>
+            </div>
+          </div>
+          <!-- 経歴 -->
+          <!-- <div class="career">
+            <h3 class="career__ttl">経歴</h3>
+            <div class="accordion">
+              <div class="accordion__top">
+                <h4 class="accordion__top-ttl">
+                  2017年 <br class="br-sp" />
+                  SES企業に勤務(Javaプログラマー)<span class="accordion__toggle"><i class="fas fa-chevron-down"></i> </span>
+                </h4>
+              </div>
+              <div class="accordion__bottom">
+                <div class="profile-career__detail">
+                  <h4 class="profile-career__bottom-ttl">
+                    ［1］大手百貨店ECサイトの改修・機能追加
+                  </h4>
+                  <p class="profile-career__bottom-txt">
+                    担当: 詳細設計、コーディング、単体・結合テスト
+                  </p>
+                  <p class="profile-career__bottom-txt">
+                    使用言語等: Java、Struts、JavaScript、jsp、MySQL、TortoiseSVN、Apache Tomcat
+                  </p>
+                </div>
+                <div class="profile-career__detail">
+                  <h4 class="profile-career__bottom-txt">
+                    ［2］医療系アプリケーション開発
+                  </h4>
+                  <p class="profile-career__bottom-txt">
+                    担当: 基本設計、コーディング
+                  </p>
+                  <p class="profile-career__bottom-txt">
+                    使用言語等: Java、Spring、jsp、PostgreSQL、Apache Tomcat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="career-accordion">
+              <div class="profile-career-accordion__top">
+                <h4 class="accordion__top-ttl">
+                  2018年 <br class="br-sp" />
+                  会計事務所に勤務(システム担当・経理)<span class="accordion__toggle"><i class="fas fa-chevron-down"></i> </span>
+                </h4>
+              </div>
+              <div class="profile-career-accordion__bottom">
+                社内ネットワークや
+              </div>
+            </div>
+          </div> -->
+          <div class="career">
+            <h3 class="career__ttl">経歴</h3>
+            <table class="table">
+              <tbody class="table-body">
+                <tr class="table-th career-table career-th">
+                  <td class="table-td career__year">2017年</td>
+
+                  <td class="table-td">SES企業に勤務</td>
+                </tr>
+                <tr class="table-th career-cotent">
+                  <td class="table-td"></td>
+                  <td class="table-td">
+                    <div class="career-cotent__detail">
+                      <div class="career-cotent__detail-item">
+                        <h4 class="career__content-ttl">
+                          [1]百貨店ECサイトの機能追加
+                        </h4>
+                        <div class="career__content-textarea">
+                          <p class="career__content-txt">
+                            担当: 詳細設計、実装、単体・結合テスト
+                          </p>
+                          <p class="career__content-txt">
+                            使用言語等: Java、Struts、JavaScript、jsp、MySQL、TortoiseSVN、Apache Tomcat
+                          </p>
+                        </div>
+                      </div>
+                      <div class="career-cotent__detail-item">
+                        <h4 class="career__content-ttl">
+                          [2]医療系アプリケーション開発
+                        </h4>
+                        <div class="career__content-textarea">
+                          <p class="career__content-txt">
+                            担当: 基本設計、実装
+                          </p>
+                          <p class="career__content-txt">
+                            使用言語等: Java、Spring、jsp、PostgreSQL、Apache Tomcat
+                          </p>
+                        </div>
+                      </div>
+                      <span class="accordion-close accordion-close--career"><i class="fas fa-angle-up"></i> 閉じる</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-th">
+                  <td class="table-td career__year">2018年</td>
+                  <td class="table-td">会計事務所に勤務</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- スキル -->
+          <div class="skill">
+            <h3 class="skill__ttl">スキル</h3>
+            <div class="skill-list">
+              <ul class="owl-carousel">
+                <li class="skill__item">
+                  <div class="skill__img skill__img01"></div>
+                  <figure class="skill__name">HTML5</figure>
+                </li>
+                <li class="skill__item skill__item02">
+                  <div class="skill__img skill__img02"></div>
+                  <figure class="skill__name">CSS3</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img03"></div>
+                  <figure class="skill__name">Jquery</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img04"></div>
+                  <figure class="skill__name">Javascript</figure>
+                </li>
+
+                <li class="skill__item">
+                  <div class="skill__img skill__img05"></div>
+                  <figure class="skill__name">PHP</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img09"></div>
+                  <figure class="skill__name">WordPress</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img06"></div>
+                  <figure class="skill__name">Sass</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img07"></div>
+                  <figure class="skill__name">gulp</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img08"></div>
+                  <figure class="skill__name">Bootstrap4</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img10"></div>
+                  <figure class="skill__name">GitHub</figure>
+                </li>
+                <li class="skill__item">
+                  <div class="skill__img skill__img11"></div>
+                  <figure class="skill__name">Photoshop</figure>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <!-- 制作物 -->
+
       <section id="works" class="works">
         <div class="inner">
           <h2 class="works-ttl">制作物</h2>
@@ -101,6 +273,9 @@
                   ポップパンクバンドOverslepts様のホームページを制作しました。
                 </p>
                 <p class="works-list__cat"><span class="works-list__cat-txt">ホームページ制作</span>/<span class="works-list__cat-txt">WordPress</span></p>
+                <div class="works-list__link">
+                  <a href="http://overslepts.starfree.jp/" class="works-list__link-txt" target="blank">サイトを見る</a>
+                </div>
               </div>
             </div>
             <div class="works-list__item">
@@ -111,6 +286,9 @@
                   WordPressテーマを用いてコーポレートサイトを制作しました。
                 </p>
                 <p class="works-list__cat"><span class="works-list__cat-txt">ホームページ制作</span>/<span class="works-list__cat-txt">WordPress</span></p>
+                <div class="works-list__link">
+                  <a href="http://overslepts.starfree.jp/" class="works-list__link-txt" target="blank">サイトを見る</a>
+                </div>
               </div>
             </div>
             <div class="works-list__item">
@@ -126,7 +304,7 @@
           </div>
           <div class="works-btn">
             <a href="" class="btn btn--works">
-              <p class="btn__txt">さらに制作を見る</p>
+              <p class="btn__txt">さらに制作物を見る</p>
             </a>
           </div>
         </div>
@@ -139,6 +317,11 @@
       </section>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- owl.carousel -->
+
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

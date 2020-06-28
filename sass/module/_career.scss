@@ -1,0 +1,50 @@
+.career {
+  margin-bottom: 72px;
+}
+
+.career__ttl {
+  font-size: 2.4em;
+  margin-bottom: 24px;
+}
+
+.career-th {
+}
+
+.career__year {
+  width: 60px;
+}
+
+.career-cotent {
+  // display: none;
+  border-top: hidden !important;
+}
+
+.career__content-ttl {
+  display: inline;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+  line-height: 1.8;
+}
+
+.career__content-textarea {
+  margin: 16px 0 0 0;
+}
+
+.career__content-txt {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.career-cotent__detail {
+  // display: none;
+  margin-bottom: 24px;
+}
+
+.career-cotent__detail-item {
+  margin: 16px 0 32px;
+
+  &:nth-child(2) {
+    margin-bottom: 0;
+  }
+}

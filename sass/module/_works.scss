@@ -32,7 +32,7 @@
 }
 
 .works-list__ttl {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .works-list__txt {
@@ -54,6 +54,20 @@
   color: $base-color;
   font-size: inherit;
   margin: 0 4px;
+}
+.works-list__link {
+  text-align: right;
+  padding-right: 16px;
+  margin-top: 48px;
+}
+
+.works-list__link-txt {
+  font-size: 1.4em;
+  padding-bottom: 2px;
+
+  &:hover {
+    border-bottom: 1px solid #000;
+  }
 }
 
 .works-btn {

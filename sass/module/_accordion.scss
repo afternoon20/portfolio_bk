@@ -1,0 +1,13 @@
+.accordion-close {
+  font-size: 1.6rem;
+}
+
+.accordion-close--career {
+  // text-align: center;
+  padding: 8px 0;
+  color: $base-color;
+
+  display: inline-block;
+
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.skill {
+}
+
+.skill__ttl {
+  font-size: 2.4em;
+  margin-bottom: 24px;
+}
+
+.skill-list {
+}
+
+.skill__item {
+  // width: 200px;
+  // height: 100px;
+  // background-color: grey;
+
+  text-align: center;
+}
+
+.skill__img {
+  height: 88px;
+  width: 100%;
+  margin-bottom: 8px;
+
+  @include mq("sp") {
+    height: 44px;
+  }
+
+  // 背景画像ループ
+  $tmp: "";
+  $nth: "";
+  @for $i from 1 through 20 {
+    @if $i < 10 {
+      $tmp: "0#{$i}";
+    } @else {
+      $tmp: $i;
+    }
+    $nth: $i;
+
+    &#{$tmp} {
+      background: url(..#{$imgDir}skill-img#{$tmp}.svg) center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.skill__name {
+  font-size: 1.2em;
+  line-height: 2em;
+}
