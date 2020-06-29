@@ -4,20 +4,23 @@
 
 ### Sass は入れ子にしない。ただし、hover や nth(n)-child、ライブラリのクラスのカスタマイズは除く。
 
-非推奨
+```html
+<!-- 非推奨 -->
 .block{
 display: block;
 
-.block\_\_elements{
+.block__elements{
 margin:0;
 }
 }
 
-推奨
+<!-- 推奨 -->
 .block{
 display: block;
 }
 
-.block\_\_elements{
+.block__elements{
 margin:0;
 }
+```
+--
