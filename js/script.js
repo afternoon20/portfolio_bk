@@ -1,7 +1,7 @@
 // onwheel.carousel
 $(function () {
   $(".owl-carousel").owlCarousel({
-    // autoplay: true,
+    autoplay: true,
     margin: 16,
     nav: true,
     items: 6, //アイテムの数

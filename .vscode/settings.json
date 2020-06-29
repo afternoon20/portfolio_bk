@@ -2,5 +2,6 @@
   "git.ignoreLimitWarning": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnType": true,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "prettier.jsxSingleQuote": true
 }

@@ -38,7 +38,7 @@
     $nth: $i;
 
     &#{$tmp} {
-      background: url(..#{$imgDir}skill-img#{$tmp}.svg) center center no-repeat;
+      background: url(#{$imgDir}/skill-img#{$tmp}.svg) center center no-repeat;
       background-size: contain;
     }
   }

@@ -31,6 +31,10 @@ p {
   line-height: 1.6;
   letter-spacing: 0.1rem;
   word-wrap: break-word;
+
+  @include mq("sp") {
+    font-size: 1.4em;
+  }
 }
 
 span {
