@@ -84,14 +84,19 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
-  font-weight: 700;
   margin-bottom: 56px;
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
 h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  letter-spacing: 0.15rem;
 }
 
 h4 {
@@ -103,6 +108,12 @@ p {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 1.4em;
+  }
 }
 
 span {
@@ -181,8 +192,14 @@ section {
 }
 
 .career__ttl {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .career__ttl {
+    font-size: 1.8rem;
+  }
 }
 
 .career-list {
@@ -194,6 +211,12 @@ section {
   padding-left: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .career-list__item {
+    margin-bottom: 32px;
+  }
+}
+
 .career-list__item-top {
   align-items: stretch;
   display: flex;
@@ -203,12 +226,13 @@ section {
   font-size: 1.6rem;
   justify-content: flex-start;
   line-height: 1.4;
-  margin: 0 0 16px;
+  margin: 0 0 8px;
 }
 
 @media screen and (max-width: 767px) {
   .career-list__item-top {
-    margin-bottom: 8px;
+    font-size: 1.4rem;
+    margin-bottom: 0;
   }
 }
 
@@ -237,6 +261,14 @@ section {
   padding: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .career-list__item-toggle {
+    font-size: 1.4rem;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
 .career-list__item-toggle:hover {
   opacity: 0.5;
 }
@@ -248,6 +280,13 @@ section {
 
 .career-list__item-bottom {
   margin: 16px 0 16px 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .career-list__item-bottom {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
 }
 
 .career-list__item-content:first-child {
@@ -312,7 +351,8 @@ section {
 }
 
 .contact__txt {
-  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 16px;
 }
 
 .footer {
@@ -515,19 +555,20 @@ section {
 .mv .mv-table-cell {
   color: #fff;
   display: table-cell;
+  padding-top: 50px;
   vertical-align: middle;
 }
 
 .mv .mv-ttl {
-  font-size: 3.6em;
+  font-size: 4em;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   text-align: left;
 }
 
 @media screen and (max-width: 767px) {
   .mv .mv-ttl {
-    font-size: 2.4em;
+    font-size: 3.2em;
   }
 }
 
@@ -543,12 +584,13 @@ section {
 }
 
 .mv .mv-txt {
-  font-size: 2.4em;
+  font-size: 2em;
 }
 
 @media screen and (max-width: 767px) {
   .mv .mv-txt {
     font-size: 1.6em;
+    margin-bottom: 4px;
   }
 }
 
@@ -704,13 +746,7 @@ section {
 }
 
 .service-list__disc {
-  padding-left: 48px;
-}
-
-@media screen and (max-width: 767px) {
-  .service-list__disc {
-    padding-left: 32px;
-  }
+  padding-left: 32px;
 }
 
 .service-list__ttl {

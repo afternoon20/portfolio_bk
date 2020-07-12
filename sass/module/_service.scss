@@ -36,11 +36,7 @@
 }
 
 .service-list__disc {
-  padding-left: 48px;
-
-  @include mq('sp') {
-    padding-left: 32px;
-  }
+  padding-left: 32px;
 }
 
 .service-list__ttl {

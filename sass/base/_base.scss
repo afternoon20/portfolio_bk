@@ -14,13 +14,18 @@ h1 {
 h2 {
   font-size: 3.2rem;
   text-align: center;
-  font-weight: 700;
+  // font-weight: 700;
   margin-bottom: 56px;
+
+  @include mq('sp') {
+    font-size: 2.4rem;
+  }
 }
 
 h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  // font-weight: 700;
+  letter-spacing: 0.15rem;
 }
 
 h4 {
@@ -33,9 +38,9 @@ p {
   letter-spacing: 0.1rem;
   word-wrap: break-word;
 
-  // @include mq('sp') {
-  //   font-size: 1.4em;
-  // }
+  @include mq('sp') {
+    font-size: 1.4em;
+  }
 }
 
 span {

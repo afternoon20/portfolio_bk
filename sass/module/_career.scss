@@ -3,8 +3,12 @@
 }
 
 .career__ttl {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   margin-bottom: 24px;
+
+  @include mq('sp') {
+    font-size: 1.8rem;
+  }
 }
 
 .career-list {
@@ -14,17 +18,22 @@
 .career-list__item {
   margin-bottom: 24px;
   padding-left: 16px;
+
+  @include mq('sp') {
+    margin-bottom: 32px;
+  }
 }
 
 .career-list__item-top {
-  margin: 0 0 16px;
+  margin: 0 0 8px;
   font-size: 1.6rem;
   @include flex($align: stretch);
   flex-wrap: nowrap;
   line-height: 1.4;
 
   @include mq('sp') {
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    font-size: 1.4rem;
   }
 }
 
@@ -50,6 +59,12 @@
   cursor: pointer;
   color: $base-color;
 
+  @include mq('sp') {
+    font-size: 1.4rem;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
   &:hover {
     opacity: 0.5;
   }
@@ -64,6 +79,11 @@
 
 .career-list__item-bottom {
   margin: 16px 0 16px 16px;
+
+  @include mq('sp') {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
 }
 
 .career-list__item-content {
