@@ -1,0 +1,64 @@
+.form {
+  margin: 48px auto 0 auto;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: $font-color;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.form__txt {
+  @include text();
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 4px 8px;
+  transition: 0.1s ease-in-out;
+
+  &:focus ~ .form__label {
+    top: -16px;
+    font-size: 1.2rem;
+    opacity: 1;
+    left: -2px;
+    color: $font-color;
+  }
+}
+
+.form__textarea {
+  height: 128px;
+}
+
+.form__label {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.form__btn {
+  @include submit();
+  font-size: 1.6rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px 24px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: $emp-color;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    // opacity: 0.9;
+  }
+}

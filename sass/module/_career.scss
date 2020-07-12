@@ -12,29 +12,43 @@
 }
 
 .career-list__item {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   padding-left: 16px;
-  font-size: 1.4rem;
 }
 
 .career-list__item-top {
   margin: 0 0 16px;
   font-size: 1.6rem;
+  @include flex($align: stretch);
+  flex-wrap: nowrap;
+  line-height: 1.4;
+
+  @include mq('sp') {
+    margin-bottom: 8px;
+  }
 }
 
 .career-list__item-year {
-  display: inline;
+  margin-right: 8px;
+
+  @include mq('sp') {
+    width: 20%;
+    margin-right: 0;
+  }
 }
 
 .career-list__item-name {
-  display: inline;
+  @include mq('sp') {
+    width: 80%;
+  }
 }
 
 .career-list__item-toggle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-left: 8px;
   padding: 8px;
   cursor: pointer;
+  color: $base-color;
 
   &:hover {
     opacity: 0.5;
@@ -53,6 +67,9 @@
 }
 
 .career-list__item-content {
+  &:first-child {
+    margin-bottom: 32px;
+  }
 }
 
 .career-list__item-ttl-wrapper {

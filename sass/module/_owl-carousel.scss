@@ -10,9 +10,17 @@
 }
 .owl-prev {
   left: -20px;
+
+  @include mq('sp') {
+    left: -10px;
+  }
 }
 .owl-next {
   right: -20px;
+
+  @include mq('sp') {
+    right: -10px;
+  }
 }
 .owl-prev i,
 .owl-next i {

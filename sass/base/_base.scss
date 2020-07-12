@@ -1,7 +1,7 @@
 body {
   // color: $font-color;
   // font-family: "Roboto", sans-serif;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
   font-weight: 500;
 }
 
@@ -20,6 +20,7 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+  font-weight: 700;
 }
 
 h4 {
@@ -32,9 +33,9 @@ p {
   letter-spacing: 0.1rem;
   word-wrap: break-word;
 
-  @include mq("sp") {
-    font-size: 1.4em;
-  }
+  // @include mq('sp') {
+  //   font-size: 1.4em;
+  // }
 }
 
 span {
@@ -43,8 +44,9 @@ span {
 
 section {
   padding: 80px 0;
+  border-bottom: 1px solid $base-color;
 
-  @include mq("sp") {
+  @include mq('sp') {
     padding: 40px 0;
   }
 }

@@ -376,10 +376,34 @@
       <!-- お問い合わせ -->
       <section id="contact" class="contact">
         <div class="inner">
-          <h2 class="contact-ttl">お問い合わせ</h2>
+          <h2 class="contact__ttl">お問い合わせ</h2>
+          <p class="contact__txt">kokoni</p>
+          <form class="form">
+            <div class="form-group">
+              <input class="form__txt" type="text" />
+              <label class="form__label">名前</label>
+            </div>
+            <div class="form-group">
+              <input class="form__txt" type="email" />
+              <label class="form__label">メールアドレス</label>
+            </div>
+            <div class="form-group">
+              <textarea class="form__txt form__textarea"></textarea>
+              <label class="form__label">内容</label>
+            </div>
+            <button type="button" class="form__btn">
+              送信する
+              <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+            </button>
+          </form>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="inner">
+        <p class="footer__txt">©Copyright2020 .All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
