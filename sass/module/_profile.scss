@@ -4,9 +4,9 @@
 
 .profile-list {
   @include flex($align: flex-start);
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 
-  @include mq("sp") {
+  @include mq('sp') {
     margin-bottom: 40px;
   }
 }
@@ -15,7 +15,7 @@
   text-align: center;
   margin-right: 32px;
 
-  @include mq("sp") {
+  @include mq('sp') {
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
@@ -31,7 +31,7 @@
   background-color: red;
   margin-bottom: 16px;
 
-  @include mq("sp") {
+  @include mq('sp') {
     margin-bottom: 8px;
   }
 }
@@ -42,7 +42,7 @@
   min-width: 120px;
   max-width: 100%;
 
-  @include mq("sp") {
+  @include mq('sp') {
     width: 100%;
   }
 }

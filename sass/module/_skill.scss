@@ -3,10 +3,11 @@
 
 .skill__ttl {
   font-size: 2.4em;
-  margin-bottom: 24px;
+  margin: 24px 0 32px 0;
 }
 
 .skill-list {
+  text-align: center;
 }
 
 .skill__item {
@@ -22,16 +23,16 @@
   width: 100%;
   margin-bottom: 8px;
 
-  @include mq("sp") {
+  @include mq('sp') {
     height: 44px;
   }
 
   // 背景画像ループ
-  $tmp: "";
-  $nth: "";
+  $tmp: '';
+  $nth: '';
   @for $i from 1 through 20 {
     @if $i < 10 {
-      $tmp: "0#{$i}";
+      $tmp: '0#{$i}';
     } @else {
       $tmp: $i;
     }

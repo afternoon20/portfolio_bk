@@ -191,7 +191,7 @@ section {
 }
 
 .career {
-  margin-bottom: 72px;
+  margin-bottom: 64px;
 }
 
 .career__ttl {
@@ -199,8 +199,63 @@ section {
   margin-bottom: 24px;
 }
 
-.career__year {
-  width: 60px;
+.career-list {
+  font-size: 1.6rem;
+}
+
+.career-list__item {
+  font-size: 1.4rem;
+  margin-bottom: 32px;
+  padding-left: 16px;
+}
+
+.career-list__item-top {
+  font-size: 1.6rem;
+  margin: 0 0 16px;
+}
+
+.career-list__item-year {
+  display: inline;
+}
+
+.career-list__item-name {
+  display: inline;
+}
+
+.career-list__item-toggle {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-left: 8px;
+  padding: 8px;
+}
+
+.career-list__item-toggle:hover {
+  opacity: 0.5;
+}
+
+.career-list__item-toggle-txt {
+  display: inline;
+  font-size: inherit;
+}
+
+.career-list__item-bottom {
+  margin: 16px 0 16px 16px;
+}
+
+.career-list__item-ttl-wrapper {
+  margin-bottom: 16px;
+}
+
+.career-list__item-ttl {
+  border-bottom: 1px solid #000;
+  display: inline;
+  line-height: 1.8;
+  padding-bottom: 4px;
+}
+
+.career-list__item-txt {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
 }
 
 .career-cotent {
@@ -402,7 +457,7 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 767px) {
@@ -548,7 +603,11 @@ section {
 
 .skill__ttl {
   font-size: 2.4em;
-  margin-bottom: 24px;
+  margin: 24px 0 32px 0;
+}
+
+.skill-list {
+  text-align: center;
 }
 
 .skill__item {
@@ -747,7 +806,9 @@ section {
 }
 
 .works-list__img {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 8px;
+  max-height: 196px;
   width: 100%;
 }
 
@@ -778,5 +839,6 @@ section {
 
 .works-btn {
   display: block;
+  margin-top: 32px;
   text-align: center;
 }
