@@ -1,13 +1,24 @@
 .price {
-  margin-bottom: 72px;
+  margin-bottom: 80px;
 }
 
 .price__ttl {
   font-size: 2.4rem;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 
   @include mq('sp') {
     font-size: 1.8rem;
     text-align: center;
+  }
+}
+
+.price__txt {
+  font-size: 1.4rem;
+  margin: 4px 0 0 48px;
+
+  @include mq('sp') {
+    font-size: 1.2rem;
+    margin-left: 0;
+    padding: 0 4px;
   }
 }

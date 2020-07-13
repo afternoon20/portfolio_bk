@@ -5,7 +5,7 @@
 .service-list {
   @include flex($align: stretch);
   // background-color: red;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 
   @include mq('sp') {
     margin-bottom: 16px;
