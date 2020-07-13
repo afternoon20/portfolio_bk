@@ -1,9 +1,9 @@
 .header {
-  position: relative;
+  // position: fixed;
   top: 0;
   height: 60px;
   width: 100%;
-  background: rgba(255, 255, 255, 0);
+  background: #2f87bf;
 }
 
 .header-wrapper {
@@ -19,7 +19,7 @@
 .header-nav {
   margin-left: auto;
 
-  @include mq("sp") {
+  @include mq('sp') {
     display: none;
   }
 }
@@ -29,7 +29,7 @@
 }
 
 .header-nav__list-item {
-  margin-right: 40px;
+  margin-right: 32px;
 }
 
 .header-nav__list-link {

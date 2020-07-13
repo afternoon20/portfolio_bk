@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
+  font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   line-height: 1;
 }
 
@@ -41,7 +41,8 @@ ul,
 ol,
 dl,
 li,
-figure {
+figure,
+blockquote {
   border: 0;
   box-sizing: border-box;
   color: inherit;
@@ -72,6 +73,7 @@ a {
 }
 
 body {
+  color: #3a3a59;
   font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
   font-weight: 500;
 }
@@ -123,6 +125,7 @@ span {
 section {
   border-bottom: 1px solid #2f87bf;
   padding: 80px 0;
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
@@ -136,7 +139,7 @@ section {
 }
 
 .biz-hour {
-  margin: 48px 0;
+  margin: 72px 0 48px 0;
 }
 
 .biz-hour__ttl {
@@ -381,6 +384,44 @@ section {
   }
 }
 
+.drawer-hamburger {
+  border-radius: 50%;
+  display: none;
+  padding: 16px !important;
+  padding: 8px 10px 20px !important;
+  right: 8px !important;
+  top: 8px !important;
+  width: 24px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .drawer-hamburger {
+    display: block;
+  }
+}
+
+.drawer-hamburger-icon {
+  background-color: #3a3a59;
+  text-align: center;
+  width: 24px;
+}
+
+.drawer-hamburger-icon::before {
+  background-color: #3a3a59;
+  top: -6px;
+}
+
+.drawer-hamburger-icon::after {
+  background-color: #3a3a59;
+  top: 6px;
+}
+
+.drawer-menu-item {
+  color: #3a3a59;
+  font-size: 1.4rem;
+  margin: 0 8px 8px 8px;
+}
+
 .footer {
   padding: 16px 0;
   text-align: center;
@@ -440,6 +481,7 @@ section {
 
 .form__textarea {
   height: 128px;
+  max-width: 100%;
 }
 
 .form__label {
@@ -491,9 +533,8 @@ section {
 }
 
 .header {
-  background: rgba(255, 255, 255, 0);
+  background: #2f87bf;
   height: 60px;
-  position: relative;
   top: 0;
   width: 100%;
 }
@@ -531,7 +572,7 @@ section {
 }
 
 .header-nav__list-item {
-  margin-right: 40px;
+  margin-right: 32px;
 }
 
 .header-nav__list-link {
@@ -661,8 +702,49 @@ section {
   color: #d1e6f4 !important;
 }
 
+#page-top {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  bottom: 48px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  height: 64px;
+  position: fixed;
+  right: 50px;
+  transition: 0.2s ease-in-out;
+  width: 64px;
+  z-index: 99999;
+}
+
+#page-top:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  #page-top {
+    bottom: 20px;
+    height: 50px;
+    right: 10px;
+    width: 46px;
+  }
+}
+
+#page-top .fas {
+  color: #3a3a59;
+  display: block !important;
+  font-size: 32px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #page-top .fas {
+    font-size: 20px;
+  }
+}
+
 .price {
-  margin-bottom: 80px;
+  margin-bottom: 24px;
 }
 
 .price__ttl {
@@ -988,6 +1070,20 @@ section {
   line-height: 2em;
 }
 
+.skill__quote {
+  margin-top: 4px;
+  text-align: right;
+}
+
+.skill__quote-link:hover {
+  border-bottom: 1px solid #3a3a59;
+}
+
+.sns--header {
+  margin-top: 16px;
+  text-align: center;
+}
+
 .sns__link {
   font-size: 2.4rem;
   margin-right: 16px;
@@ -1015,13 +1111,25 @@ section {
   }
 }
 
-.table--price, .table--biz-hour {
+.table--price {
   margin: 0 16px 0 40px;
   width: calc(100% - 56px);
 }
 
 @media screen and (max-width: 767px) {
-  .table--price, .table--biz-hour {
+  .table--price {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.table--biz-hour {
+  margin: 0 40px 0 40px;
+  width: calc(100% - 80px);
+}
+
+@media screen and (max-width: 767px) {
+  .table--biz-hour {
     margin: 0;
     width: 100%;
   }

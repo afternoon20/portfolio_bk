@@ -1,0 +1,52 @@
+.drawer-hamburger {
+  //   position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  width: 24px !important;
+  padding: 16px !important;
+  // background-color: rgba(47, 135, 191, 0.5);
+  border-radius: 50%;
+  padding: 8px 10px 20px !important;
+  display: none;
+
+  @include mq('sp') {
+    display: block;
+  }
+}
+
+// .drawer-navbar {
+//   background-color: rgba(225, 225, 225, 0) !important;
+// }
+
+// .drawer-navbar-header {
+//   background-color: rgba(0, 0, 0, 0) !important;
+//   border-bottom: 0 solid #fff !important;
+// }
+
+.drawer-hamburger-icon {
+  background-color: $font-color;
+  text-align: center;
+  width: 24px;
+
+  &::before {
+    background-color: $font-color;
+
+    top: -6px;
+  }
+
+  &::after {
+    background-color: $font-color;
+
+    top: 6px;
+  }
+}
+
+// .drawer-brand {
+//   margin-bottom: 8px;
+// }
+
+.drawer-menu-item {
+  color: $font-color;
+  font-size: 1.4rem;
+  margin: 0 8px 8px 8px;
+}

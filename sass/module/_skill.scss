@@ -54,3 +54,14 @@
   font-size: 1.2em;
   line-height: 2em;
 }
+
+.skill__quote {
+  text-align: right;
+  margin-top: 4px;
+}
+
+.skill__quote-link {
+  &:hover {
+    border-bottom: 1px solid $font-color;
+  }
+}
