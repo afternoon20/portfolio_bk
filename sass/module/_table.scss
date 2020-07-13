@@ -1,21 +1,57 @@
 .table {
   width: 100%;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   // border: 1px solid;
   border-collapse: collapse;
   table-layout: fixed;
+  background-color: #fff;
+
+  @include mq('sp') {
+    font-size: 1.4rem;
+  }
 }
 
-.table-body {
+.table--price {
+  width: calc(100% - 56px);
+  margin: 0 16px 0 40px;
+
+  @include mq('sp') {
+    width: 100%;
+    margin: 0;
+  }
 }
 
-.table-th {
-  // background-color: red;
-  // border: 1px solid;
-  width: 20px;
+.table--biz-hour {
+  @extend .table--price;
 }
 
-.table-td {
-  // border: 1px solid;
-  padding: 8px 0;
+.table__body {
+}
+
+.table__tr {
+  vertical-align: middle;
+}
+
+.table__th {
+  text-align: left;
+  background-color: lighten($base-color, 24%);
+  border: 1px solid $font-color;
+  width: 240px;
+  padding: 16px;
+  vertical-align: middle;
+
+  @include mq('sp') {
+    width: 124px;
+    padding: 8px;
+  }
+}
+
+.table__th--biz-hour {
+  vertical-align: middle;
+}
+
+.table__td {
+  border: 1px solid $font-color;
+  padding: 16px;
+  vertical-align: middle;
 }

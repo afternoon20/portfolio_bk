@@ -1,0 +1,13 @@
+.biz-hour {
+  margin: 48px 0;
+}
+
+.biz-hour__ttl {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+
+  @include mq('sp') {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}

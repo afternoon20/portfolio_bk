@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding: 0 40px;
 
-  @include mq("sp") {
-    padding: 0 20px;
+  @include mq('sp') {
+    padding: 0 16px;
   }
 }

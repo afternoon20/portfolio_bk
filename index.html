@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
     <!-- owl.carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <!-- Drawer -->
+    <link rel="stylesheet" href="./css/drawer.min.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <title>ポートフォリオ</title>
   </head>
@@ -83,30 +85,62 @@
               </div>
             </div>
           </div>
+          <!-- 料金表 -->
+          <div class="price">
+            <h3 class="price__ttl">料金表</h3>
+            <table class="table table--price">
+              <tbody class="table__body">
+                <tr class="table__tr">
+                  <th class="table__th">コーディング<br class="br-sp" />(トップ)</th>
+                  <td class="table__td">
+                    &yen; 30,000円〜
+                  </td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__th">コーディング<br class="br-sp" />(下層)</th>
+                  <td class="table__td">&yen; 15,000円〜</td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__th">コーディング<br class="br-sp" />(LP)</th>
+                  <td class="table__td">&yen; 30,000円〜</td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__th">WordPress制作</th>
+                  <td class="table__td">&yen; 50,000円〜</td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__th">ホームページ・<br class="br-sp" />LP制作</th>
+                  <td class="table__td">&yen; 50,000円〜</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-          <!-- 営業時間 -->
-          <!-- <div class="biz-hour">
-            <h3 class="biz-hour">営業時間</h3>
-            <table class="table">
-              <tbody class="table-body">
-                <thead class="table-thead">
+          <!-- 対応可能時間 -->
+          <div class="biz-hour">
+            <h3 class="biz-hour__ttl">対応可能時間</h3>
+            <table class="table table--biz-hour">
+              <tbody class="table__body">
+                <!-- <thead class="table-thead">
                   <tr class="table-tr">
                     <th class="table-th">日にち</th>
                     <th class="table-th">時間</th>
                   </tr>
-                </thead>
-                <tr class="table-th career-table career-th">
-                  <td class="table-td career__year">平日</td>
+                </thead> -->
+                <tr class="table__tr">
+                  <th class="table__th">平日</th>
 
-                  <td class="table-td">6:00~9:00 19:00~23:00</td>
+                  <td class="table__td">
+                    6:00～9:00 / 20:00～23:00
+                  </td>
                 </tr>
-                <tr class="table-th">
-                  <td class="table-td career__year">土日・祝日</td>
-                  <td class="table-td">9:00~22:00</td>
+                <tr class="table__tr">
+                  <th class="table__th">土日・祝日</th>
+                  <td class="table__td">9:00～22:00</td>
                 </tr>
               </tbody>
             </table>
-          </div> -->
+          </div>
         </div>
       </section>
       <!-- プロフィール -->
@@ -168,7 +202,7 @@
               <div class="career-list__item">
                 <h4 class="career-list__item-top">
                   <div class="career-list__item-year">2018年</div>
-                  <div class="career-list__item-name">会計事務所に税務・会計スタッフ、システム担当として勤務</div>
+                  <div class="career-list__item-name">会計事務所に税務・会計スタッフ、<br class="br-sp" />システム担当として勤務</div>
                 </h4>
                 <div class="career-list__item-bottom">
                   <div class="career-list__item-content">
@@ -195,80 +229,6 @@
                 </span>
               </div>
             </div>
-            <!-- <table class="table">
-              <tbody class="table-body">
-                <tr class="table-th career-table career-th">
-                  <td class="table-td career__year">2017年</td>
-
-                  <td class="table-td">SES企業に勤務</td>
-                </tr>
-                <tr class="table-th career-cotent">
-                  <td class="table-td"></td>
-                  <td class="table-td">
-                    <div class="career-cotent__detail">
-                      <div class="career-cotent__detail-item">
-                        <h4 class="career__content-ttl">
-                          [1]百貨店ECサイトの機能追加
-                        </h4>
-                        <div class="career__content-textarea">
-                          <p class="career__content-txt">
-                            担当: 詳細設計、実装、単体・結合テスト
-                          </p>
-                          <p class="career__content-txt">
-                            使用言語等: Java、Struts、JavaScript、jsp、MySQL、TortoiseSVN、Apache Tomcat
-                          </p>
-                        </div>
-                      </div>
-                      <div class="career-cotent__detail-item">
-                        <h4 class="career__content-ttl">
-                          [2]医療系アプリケーション開発
-                        </h4>
-                        <div class="career__content-textarea">
-                          <p class="career__content-txt">
-                            担当: 基本設計、実装
-                          </p>
-                          <p class="career__content-txt">
-                            使用言語等: Java、Spring、jsp、PostgreSQL、Apache Tomcat
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table-th">
-                  <td class="table-td career__year">2018年</td>
-                  <td class="table-td">会計事務所に勤務</td>
-                </tr>
-                <tr class="table-th career-cotent">
-                  <td class="table-td"></td>
-                  <td class="table-td">
-                    <div class="career-cotent__detail">
-                      <div class="career-cotent__detail-item">
-                        <h4 class="career__content-ttl">
-                          [1]税務・会計業務
-                        </h4>
-                        <div class="career__content-textarea">
-                          <p class="career__content-txt">
-                            個々に説明
-                          </p>
-                        </div>
-                      </div>
-                      <div class="career-cotent__detail-item">
-                        <h4 class="career__content-ttl">
-                          [2]システム担当
-                        </h4>
-                        <div class="career__content-textarea">
-                          <p class="career__content-txt">
-                            社内ネットワーク、サーバ等の各種インフラの運用・保守。Excel VBAを用いたマクロの作成。<br />
-                            社員のITツールのサポートや障害対応などのヘルプデスク業務。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table> -->
           </div>
           <!-- スキル -->
           <div class="skill">
@@ -374,6 +334,7 @@
           </div>
         </div>
       </section>
+
       <!-- お問い合わせ -->
       <section id="contact" class="contact">
         <div class="inner">
@@ -409,7 +370,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- owl.carousel -->
-
+    <script src="js/drawer.min.js"></script>
+    <script src="js/iscoll.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
   </body>

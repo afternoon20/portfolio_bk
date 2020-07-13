@@ -1,9 +1,15 @@
 .service {
+  // background-color: $bg-color;
 }
 
 .service-list {
   @include flex($align: stretch);
   // background-color: red;
+  margin-bottom: 48px;
+
+  @include mq('sp') {
+    margin-bottom: 16px;
+  }
 }
 
 .service-list__item {
@@ -44,6 +50,7 @@
 
   @include mq('sp') {
     margin-bottom: 16px;
+    font-size: 1.6rem;
   }
 }
 

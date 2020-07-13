@@ -127,12 +127,28 @@ section {
 
 @media screen and (max-width: 767px) {
   section {
-    padding: 40px 0;
+    padding: 48px 0;
   }
 }
 
 *:focus {
   outline: none;
+}
+
+.biz-hour {
+  margin: 48px 0;
+}
+
+.biz-hour__ttl {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .biz-hour__ttl {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 
 .br-sp {
@@ -199,6 +215,7 @@ section {
 @media screen and (max-width: 767px) {
   .career__ttl {
     font-size: 1.8rem;
+    text-align: center;
   }
 }
 
@@ -231,6 +248,7 @@ section {
 
 @media screen and (max-width: 767px) {
   .career-list__item-top {
+    flex-direction: column;
     font-size: 1.4rem;
     margin-bottom: 0;
   }
@@ -242,14 +260,15 @@ section {
 
 @media screen and (max-width: 767px) {
   .career-list__item-year {
-    margin-right: 0;
-    width: 20%;
+    margin: 0 0 4px 0;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .career-list__item-name {
-    width: 80%;
+    margin-bottom: 4px;
+    width: 100%;
   }
 }
 
@@ -527,7 +546,7 @@ section {
 
 @media screen and (max-width: 767px) {
   .inner {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 
@@ -635,6 +654,22 @@ section {
   color: #d1e6f4 !important;
 }
 
+.price {
+  margin-bottom: 72px;
+}
+
+.price__ttl {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .price__ttl {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
 .profile {
   background-color: #f5fcff;
 }
@@ -711,6 +746,13 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .service-list {
+    margin-bottom: 16px;
+  }
 }
 
 .service-list__item {
@@ -755,6 +797,7 @@ section {
 
 @media screen and (max-width: 767px) {
   .service-list__ttl {
+    font-size: 1.6rem;
     margin-bottom: 16px;
   }
 }
@@ -789,8 +832,15 @@ section {
 }
 
 .skill__ttl {
-  font-size: 2.4em;
-  margin: 24px 0 32px 0;
+  font-size: 2.4rem;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .skill__ttl {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 
 .skill-list {
@@ -932,18 +982,59 @@ section {
 }
 
 .table {
+  background-color: #fff;
   border-collapse: collapse;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   table-layout: fixed;
   width: 100%;
 }
 
-.table-th {
-  width: 20px;
+@media screen and (max-width: 767px) {
+  .table {
+    font-size: 1.4rem;
+  }
 }
 
-.table-td {
-  padding: 8px 0;
+.table--price, .table--biz-hour {
+  margin: 0 16px 0 40px;
+  width: calc(100% - 56px);
+}
+
+@media screen and (max-width: 767px) {
+  .table--price, .table--biz-hour {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.table__tr {
+  vertical-align: middle;
+}
+
+.table__th {
+  background-color: #87bee1;
+  border: 1px solid #3a3a59;
+  padding: 16px;
+  text-align: left;
+  vertical-align: middle;
+  width: 240px;
+}
+
+@media screen and (max-width: 767px) {
+  .table__th {
+    padding: 8px;
+    width: 124px;
+  }
+}
+
+.table__th--biz-hour {
+  vertical-align: middle;
+}
+
+.table__td {
+  border: 1px solid #3a3a59;
+  padding: 16px;
+  vertical-align: middle;
 }
 
 .works-list {
