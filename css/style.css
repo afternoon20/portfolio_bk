@@ -422,6 +422,10 @@ section {
   margin: 0 8px 8px 8px;
 }
 
+.drawer-menu-item--contact {
+  color: #e79c2a;
+}
+
 .footer {
   padding: 16px 0;
   text-align: center;
@@ -533,7 +537,6 @@ section {
 }
 
 .header {
-  background: #2f87bf;
   height: 60px;
   top: 0;
   width: 100%;
