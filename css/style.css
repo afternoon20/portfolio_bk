@@ -630,7 +630,6 @@ section {
 }
 
 .mv .mv-ttl, .mv .mv-ttl .typed-cursor, .mv .mv-ttl--typed {
-  color: #1b4d6d;
   font-family: 'Roboto', sans-serif;
   font-size: 4.2rem;
   font-weight: 700;
@@ -641,11 +640,16 @@ section {
 
 @media screen and (max-width: 767px) {
   .mv .mv-ttl, .mv .mv-ttl .typed-cursor, .mv .mv-ttl--typed {
-    font-size: 3.2em;
+    font-size: 3.2rem;
   }
 }
 
+.mv .mv-ttl .typed-cursor, .mv .mv-ttl--typed .typed-cursor {
+  color: #1b4d6d;
+}
+
 .mv .mv-ttl--typed {
+  color: #1b4d6d;
   font-style: normal;
 }
 
@@ -1172,6 +1176,7 @@ section {
 
 .table__td {
   border: 1px solid #3a3a59;
+  line-height: 1.4;
   padding: 16px;
   vertical-align: middle;
 }

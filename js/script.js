@@ -91,7 +91,7 @@ $(function () {
 // Typed.js
 $(function () {
   var typed = new Typed('.mv-ttl--typed', {
-    strings: ['', 'タコさんウインナー', 'Accounting & Tax Staff.', 'a freelance Web Developer.'],
+    strings: ['', 'Accounting &amp; <br class="br-sp" /> Tax Staff.', 'a freelance <br class="br-sp" /> Web Developer.'],
     startDelay: 0,
     typeSpeed: 50,
     backDelay: 2000,
