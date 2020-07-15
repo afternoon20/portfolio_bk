@@ -629,17 +629,24 @@ section {
   vertical-align: middle;
 }
 
-.mv .mv-ttl {
-  font-size: 4em;
+.mv .mv-ttl, .mv .mv-ttl .typed-cursor, .mv .mv-ttl--typed {
+  color: #1b4d6d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.2rem;
   font-weight: 700;
+  letter-spacing: 0.2rem;
   margin-bottom: 24px;
   text-align: left;
 }
 
 @media screen and (max-width: 767px) {
-  .mv .mv-ttl {
+  .mv .mv-ttl, .mv .mv-ttl .typed-cursor, .mv .mv-ttl--typed {
     font-size: 3.2em;
   }
+}
+
+.mv .mv-ttl--typed {
+  font-style: normal;
 }
 
 .mv .mv-txtarea {
@@ -655,6 +662,7 @@ section {
 
 .mv .mv-txt {
   font-size: 2em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -1216,6 +1224,7 @@ section {
 
 .works-list__img {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  height: 150px;
   margin-bottom: 8px;
   width: 100%;
 }

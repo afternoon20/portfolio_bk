@@ -87,3 +87,14 @@ $(function () {
     return false;
   });
 });
+
+// Typed.js
+$(function () {
+  var typed = new Typed('.mv-ttl--typed', {
+    strings: ['', 'タコさんウインナー', 'Accounting & Tax Staff.', 'a freelance Web Developer.'],
+    startDelay: 0,
+    typeSpeed: 50,
+    backDelay: 2000,
+    backSpeed: 50,
+  });
+});

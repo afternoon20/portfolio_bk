@@ -24,14 +24,26 @@
   }
 
   .mv-ttl {
-    font-size: 4em;
+    font-size: 4.2rem;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    letter-spacing: 0.2rem;
     margin-bottom: 24px;
     text-align: left;
+    color: darken($base-color, 20%);
 
     @include mq('sp') {
       font-size: 3.2em;
     }
+
+    .typed-cursor {
+      @extend .mv-ttl;
+    }
+  }
+
+  .mv-ttl--typed {
+    @extend .mv-ttl;
+    font-style: normal;
   }
 
   .mv-txtarea {
@@ -45,6 +57,7 @@
 
   .mv-txt {
     font-size: 2em;
+    font-weight: bold;
 
     @include mq('sp') {
       font-size: 1.6em;
