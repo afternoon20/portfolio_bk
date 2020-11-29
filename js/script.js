@@ -56,3 +56,6 @@ $(function () {
     backSpeed: 50,
   });
 });
+
+// Wow.jsの読み込み
+new WOW().init();
