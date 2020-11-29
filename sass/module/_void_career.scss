@@ -1,0 +1,147 @@
+// .career {
+//   margin-bottom: 64px;
+// }
+
+// .career__ttl {
+//   font-size: 2.4rem;
+//   margin-bottom: 24px;
+
+//   @include mq('sp') {
+//     font-size: 1.8rem;
+//     text-align: center;
+//   }
+// }
+
+// .career-list {
+//   font-size: 1.6rem;
+// }
+
+// .career-list__item {
+//   margin-bottom: 24px;
+//   padding-left: 16px;
+
+//   @include mq('sp') {
+//     margin-bottom: 32px;
+//   }
+// }
+
+// .career-list__item-top {
+//   margin: 0 0 8px;
+//   font-size: 1.6rem;
+//   @include flex($align: stretch);
+//   flex-wrap: nowrap;
+//   line-height: 1.4;
+
+//   @include mq('sp') {
+//     margin-bottom: 0;
+//     font-size: 1.4rem;
+//     flex-direction: column;
+//   }
+// }
+
+// .career-list__item-year {
+//   margin-right: 8px;
+
+//   @include mq('sp') {
+//     width: 100%;
+//     margin: 0 0 4px 0;
+//   }
+// }
+
+// .career-list__item-name {
+//   @include mq('sp') {
+//     width: 100%;
+//     margin-bottom: 4px;
+//   }
+// }
+
+// .career-list__item-toggle {
+//   font-size: 1.6rem;
+//   // margin-left: 8px;
+//   padding: 8px 8px 8px 0;
+//   cursor: pointer;
+//   color: $base-color;
+
+//   @include mq('sp') {
+//     font-size: 1.4rem;
+//     margin-left: 0;
+//     padding-left: 0;
+//   }
+
+//   &:hover {
+//     opacity: 0.5;
+//   }
+// }
+// .career-list__item-toggle-txt {
+//   display: inline;
+//   font-size: inherit;
+// }
+
+// .career-list__item-icon {
+// }
+
+// .career-list__item-bottom {
+//   margin: 16px 0 16px 16px;
+
+//   @include mq('sp') {
+//     margin-bottom: 0;
+//     font-size: 1.4rem;
+//   }
+// }
+
+// .career-list__item-content {
+//   &:first-child {
+//     margin-bottom: 32px;
+//   }
+// }
+
+// .career-list__item-ttl-wrapper {
+//   margin-bottom: 16px;
+// }
+
+// .career-list__item-ttl {
+//   display: inline;
+//   border-bottom: 1px solid #000;
+//   padding-bottom: 4px;
+//   line-height: 1.8;
+// }
+
+// .career-list__item-txt {
+//   font-size: 1.4rem;
+//   margin-bottom: 8px;
+// }
+
+// .career-cotent {
+//   // display: none;
+//   border-top: hidden !important;
+// }
+
+// .career__content-ttl {
+//   display: inline;
+//   font-size: 1.6rem;
+//   border-bottom: 1px solid #000;
+//   padding-bottom: 4px;
+//   line-height: 1.8;
+// }
+
+// .career__content-textarea {
+//   margin: 16px 0 0 0;
+// }
+
+// .career__content-txt {
+//   font-size: 1.4rem;
+//   margin-bottom: 8px;
+// }
+
+// .career-cotent__detail {
+//   // display: none;
+//   margin-bottom: 24px;
+// }
+
+// .career-cotent__detail-item {
+//   margin: 16px 0 32px;
+
+//   &:nth-child(2) {
+//     margin-bottom: 0;
+//   }
+// }

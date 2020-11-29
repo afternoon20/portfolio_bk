@@ -1,12 +1,12 @@
 .mv {
   background: linear-gradient(45deg, rgba(129, 234, 219, 0.9), rgba(152, 225, 251, 1), rgba(47, 135, 191, 0.9)), url($imgDir + '/mv_bg.jpg') center center;
   background-size: cover;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 240px);
   margin-top: -60px;
   border-bottom: 0 solid $base-color;
 
   @include mq('sp') {
-    height: calc(100vh - 80px);
+    height: 200px;
     text-align: center;
   }
 
@@ -20,19 +20,21 @@
     display: table-cell;
     vertical-align: middle;
     color: #fff;
-    padding-top: 50px;
+    // padding-top: 50px;
   }
 
   .mv-ttl {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     letter-spacing: 0.2rem;
     margin-bottom: 24px;
-    text-align: left;
+    text-align: center;
 
     @include mq('sp') {
-      font-size: 3.2rem;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 0;
     }
 
     .typed-cursor {

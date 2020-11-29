@@ -1,0 +1,18 @@
+.cat-list {
+  margin-top: 8px;
+  font-size: 0;
+  text-align: left;
+
+  .cat-list__item {
+    font-size: 1.4rem;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: #eee;
+    display: inline;
+    line-height: 4rem;
+
+    @include mq('sp') {
+      font-size: 1.2rem;
+    }
+  }
+}

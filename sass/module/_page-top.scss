@@ -3,16 +3,15 @@
   bottom: 48px;
   right: 50px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(47, 135, 191, 0.9);
   height: 64px;
-  transition: 0.2s ease-in-out;
   width: 64px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 999;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $base-color;
   }
 
   @include mq('sp') {
@@ -27,7 +26,7 @@
     text-align: center;
     display: block !important;
     margin-top: 16px;
-    color: $font-color;
+    color: #fff;
 
     @include mq('sp') {
       font-size: 20px;

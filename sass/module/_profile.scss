@@ -1,5 +1,7 @@
 .profile {
-  background-color: $bg-color;
+  .profile__txt {
+    margin-bottom: 8px;
+  }
 }
 
 .profile-list {
@@ -23,12 +25,12 @@
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 168px;
+  height: 168px;
   background: url(../img/profile-img.jpg) center center no-repeat;
   background-size: 132%;
   border-radius: 50%;
-  background-color: red;
+  background-color: #aaa;
   margin-bottom: 16px;
 
   @include mq('sp') {
@@ -36,7 +38,7 @@
   }
 }
 
-.profile-textarea {
+.profile-right {
   width: calc(80% - 32px);
   padding: 16px;
   min-width: 120px;
@@ -44,12 +46,6 @@
 
   @include mq('sp') {
     width: 100%;
-  }
-}
-
-.profile-textarea__txt {
-  &:first-child {
-    margin-bottom: 8px;
   }
 }
 

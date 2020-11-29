@@ -1,67 +1,100 @@
 .skill {
-}
-
-.skill__ttl {
-  font-size: 2.4rem;
-  margin-bottom: 32px;
-
-  @include mq('sp') {
-    font-size: 1.8rem;
-    text-align: center;
-  }
+  background-color: $bg-color;
 }
 
 .skill-list {
-  text-align: center;
+  @include flex($align: stretch);
+  // background-color: red;
+
+  .skill-list__item {
+    cursor: default;
+    background-color: #fff;
+    width: calc(50% - 12px);
+    margin: 0 24px 32px 0;
+    padding: 0 24px 24px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    @include mq('sp') {
+      width: 100%;
+      padding: 8px 8px 16px;
+      margin-right: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .skill-list__ttl {
+    @include mq('sp') {
+      padding-left: 24px;
+    }
+  }
+
+  .skill-list__icon {
+    display: block;
+    color: #eee;
+    text-align: center;
+    width: 64px;
+    font-size: 32px;
+    height: 64px;
+    background-color: $base-color;
+    line-height: 64px;
+    margin-bottom: 32px;
+    transition: 0.3s ease-in-out;
+    margin-top: -4px;
+
+    @include mq('sp') {
+      margin-top: -16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .skill-list__ttl {
+    margin-bottom: 8px;
+    height: 1.6em;
+  }
+
+  .skill-list__txt {
+    margin-bottom: 16px;
+    height: 3.2em;
+  }
 }
 
-.skill__item {
-  // width: 200px;
-  // height: 100px;
-  // background-color: grey;
-
-  text-align: center;
-}
-
-.skill__img {
-  height: 88px;
+.skill-table {
+  font-size: 1.6rem;
   width: 100%;
-  margin-bottom: 8px;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
 
   @include mq('sp') {
-    height: 44px;
+    font-size: 1.4rem;
   }
 
-  // 背景画像ループ
-  $tmp: '';
-  $nth: '';
-  @for $i from 1 through 20 {
-    @if $i < 10 {
-      $tmp: '0#{$i}';
-    } @else {
-      $tmp: $i;
-    }
-    $nth: $i;
-
-    &#{$tmp} {
-      background: url(#{$imgDir}/skill-img#{$tmp}.svg) center center no-repeat;
-      background-size: contain;
-    }
+  .skill-table__thead {
   }
-}
 
-.skill__name {
-  font-size: 1.2em;
-  line-height: 2em;
-}
+  .skill-table__tr {
+    padding: 8px;
+    width: 100%;
+  }
 
-.skill__quote {
-  text-align: right;
-  margin-top: 4px;
-}
+  .skill-table__th {
+    background-color: #eee;
+    padding: 16px;
+  }
 
-.skill__quote-link {
-  &:hover {
-    border-bottom: 1px solid $font-color;
+  .skill-table__td {
+    padding: 24px;
+    text-align: center;
+    white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+
+    @include mq('sp') {
+      padding: 16px;
+    }
   }
 }

@@ -8,6 +8,7 @@
   border-radius: 50%;
   padding: 8px 10px 20px !important;
   display: none;
+  z-index: 99999;
 
   @include mq('sp') {
     display: block;
@@ -39,6 +40,10 @@
 
     top: 6px;
   }
+}
+
+.drawer-nav {
+  z-index: 9999;
 }
 
 // .drawer-brand {
