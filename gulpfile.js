@@ -53,7 +53,7 @@ gulp.task('imagemin', function (done) {
   var dstGlob = paths.dstDir;
   gulp
     .src(srcGlob)
-    .pipe(changed(dstGlob))
+    // .pipe(changed(dstGlob))
     .pipe(
       imagemin([
         imageminPng(),
