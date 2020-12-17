@@ -1,37 +1,40 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "## コーディング規約",
-  "main": "index.js",
+  "description": "![ポートフォリオ](img/dist/portforio.png)",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.13",
-    "css-declaration-sorter": "^5.1.2",
-    "gulp": "^4.0.2",
-    "gulp-changed": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sass-glob": "^1.1.0",
-    "gulp-svgmin": "^3.0.0",
-    "imagemin-jpeg-recompress": "^7.0.0",
-    "imagemin-pngquant": "^9.0.1"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/afternoon20/portfolio.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/afternoon20/portfolio/issues"
   },
-  "homepage": "https://github.com/afternoon20/portfolio#readme"
+  "homepage": "https://github.com/afternoon20/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "browser-sync": "^2.26.13",
+    "css-declaration-sorter": "^6.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-svgmin": "^3.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpeg-recompress": "^7.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "postcss": "^8.2.1"
+  }
 }
