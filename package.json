@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.8.2",
-    "browser-sync": "^2.26.7",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.13",
     "css-declaration-sorter": "^5.1.2",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
@@ -23,7 +23,7 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-svgmin": "^3.0.0",
     "imagemin-jpeg-recompress": "^7.0.0",
-    "imagemin-pngquant": "^9.0.0"
+    "imagemin-pngquant": "^9.0.1"
   },
   "devDependencies": {},
   "repository": {
